@@ -213,6 +213,9 @@ animations = [{
 radius = 6.0
 height = 26.0
 
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_onrkg"]
+color = Color(0.7806942, 4.548356e-06, 4.813075e-07, 1)
+
 [node name="Player" type="CharacterBody2D" unique_id=323040686]
 y_sort_enabled = true
 script = ExtResource("1_onrkg")
@@ -237,3 +240,12 @@ limit_left = 0
 limit_top = -1080
 limit_right = 3840
 limit_bottom = 1080
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=903970239]
+offset_left = -85.0
+offset_top = -101.0
+offset_right = 87.0
+offset_bottom = -74.0
+theme_override_colors/font_color = Color(0.94840246, 0.9492567, 0.949045, 1)
+theme_override_styles/fill = SubResource("StyleBoxLine_onrkg")
+exp_edit = true
