@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c2monwjnejr1i"]
+
+[ext_resource type="Texture2D" uid="uid://6xb4cf4a6i2c" path="res://Assets/Objects/Gemini_Generated_Image_vgmuvxvgmuvxvgmu-removebg-preview-1.png.png" id="1_swi73"]
+
+[node name="wood log" type="StaticBody2D" unique_id=190445806]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1453853566]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(5.4000015, -15.199997)
+scale = Vector2(2, 2)
+texture = ExtResource("1_swi73")
+region_enabled = true
+region_rect = Rect2(480, 152, 80, 40)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1560024382]
+y_sort_enabled = true
+position = Vector2(5.4000015, -15.199997)
+polygon = PackedVector2Array(-70, 4, 64, 34, 77, 25, 75, -1, 13, -21, -14, -20, -62, -32, -71, -21)

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://djllnd3mldehn"]
+
+[ext_resource type="Texture2D" uid="uid://dotd2vj7yjb3n" path="res://Assets/Objects/Rock (5) (1).png" id="1_p77cy"]
+
+[node name="Rock 3" type="StaticBody2D" unique_id=46680016]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=529885129]
+y_sort_enabled = true
+texture = ExtResource("1_p77cy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=790702945]
+y_sort_enabled = true
+position = Vector2(-3, -11)
+polygon = PackedVector2Array(-67, 34, -57, 11, 7, -8, 53, -3, 69, 5, 74, 33, 61, 44, 29, 28, 17, 57, 7, 57, -2, 54, -2, 42, -22, 53, -62, 51)

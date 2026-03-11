@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://p8jgbcv5iy27"]
+
+[ext_resource type="Texture2D" uid="uid://cgx38e5702w81" path="res://Assets/Objects/lily.png" id="1_7fvev"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wa6o0"]
+atlas = ExtResource("1_7fvev")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrs7x"]
+atlas = ExtResource("1_7fvev")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2fwi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wa6o0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lrs7x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="lotus" type="AnimatedSprite2D" unique_id=960511973]
+sprite_frames = SubResource("SpriteFrames_m2fwi")
+autoplay = "default"
+frame_progress = 0.45622292

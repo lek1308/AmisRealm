@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c0ljyop6l7e8d"]
+
+[ext_resource type="Texture2D" uid="uid://6xb4cf4a6i2c" path="res://Assets/Objects/Gemini_Generated_Image_vgmuvxvgmuvxvgmu-removebg-preview-1.png.png" id="1_d1n52"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0wsgt"]
+radius = 15.0
+
+[node name="brown mushroom" type="StaticBody2D" unique_id=305348531]
+y_sort_enabled = true
+position = Vector2(1004, 1014)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1831484679]
+y_sort_enabled = true
+texture = ExtResource("1_d1n52")
+region_enabled = true
+region_rect = Rect2(80, 152, 40, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1994296042]
+y_sort_enabled = true
+shape = SubResource("CapsuleShape2D_0wsgt")

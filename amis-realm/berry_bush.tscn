@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://dov1odv035fmw"]
+
+[ext_resource type="Script" uid="uid://lh7m2ap51led" path="res://BerryBush.cs" id="1_3y0nl"]
+[ext_resource type="Texture2D" uid="uid://ddar76o3pmbm8" path="res://Assets/Objects/Berry Bush (1).png" id="2_s7lmy"]
+[ext_resource type="Texture2D" uid="uid://co0uonqrsoji0" path="res://Assets/Objects/Bush (1).png" id="3_vg78t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beyx1"]
+atlas = ExtResource("2_s7lmy")
+region = Rect2(0, 0, 128, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfuam"]
+atlas = ExtResource("2_s7lmy")
+region = Rect2(0, 126, 128, 126)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mll8u"]
+atlas = ExtResource("3_vg78t")
+region = Rect2(0, 0, 128, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_odbj5"]
+atlas = ExtResource("3_vg78t")
+region = Rect2(0, 124, 128, 124)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mll8u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beyx1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfuam")
+}],
+"loop": true,
+"name": &"idle_berries",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mll8u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_odbj5")
+}],
+"loop": true,
+"name": &"idle_empty",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_odbj5"]
+radius = 36.0
+height = 72.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4m70"]
+radius = 52.0
+height = 104.0
+
+[node name="Berry Bush" type="StaticBody2D" unique_id=1620537525]
+y_sort_enabled = true
+script = ExtResource("1_3y0nl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=961114751]
+y_sort_enabled = true
+position = Vector2(2, -33)
+sprite_frames = SubResource("SpriteFrames_mll8u")
+animation = &"idle_berries"
+autoplay = "idle_berries"
+frame_progress = 0.9842651
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1383478473]
+y_sort_enabled = true
+position = Vector2(1, -21)
+shape = SubResource("CapsuleShape2D_odbj5")
+
+[node name="HarvestZone" type="Area2D" parent="." unique_id=714614015]
+y_sort_enabled = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HarvestZone" unique_id=1835762632]
+y_sort_enabled = true
+position = Vector2(2, -40)
+shape = SubResource("CapsuleShape2D_g4m70")

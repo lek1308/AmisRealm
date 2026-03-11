@@ -1,0 +1,139 @@
+[gd_scene format=3 uid="uid://bfgsm8y82swcs"]
+
+[ext_resource type="Texture2D" uid="uid://b27t6jd6pdnuv" path="res://Assets/Objects/Carrot grow (1).png" id="1_1sbab"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l7vel"]
+atlas = ExtResource("1_1sbab")
+region = Rect2(0, 0, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyubp"]
+atlas = ExtResource("1_1sbab")
+region = Rect2(20, 0, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ucno"]
+atlas = ExtResource("1_1sbab")
+region = Rect2(0, 22, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1c571"]
+atlas = ExtResource("1_1sbab")
+region = Rect2(20, 22, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kobi7"]
+atlas = ExtResource("1_1sbab")
+region = Rect2(0, 44, 20, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_drq1q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l7vel")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xyubp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ucno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1c571")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kobi7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mgx1p"]
+radius = 3.0
+height = 6.0
+
+[node name="Carrot" type="Area2D" unique_id=2088277558]
+y_sort_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=144927371]
+y_sort_enabled = true
+sprite_frames = SubResource("SpriteFrames_drq1q")
+autoplay = "default"
+frame_progress = 0.18986233
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=449988923]
+y_sort_enabled = true
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_mgx1p")

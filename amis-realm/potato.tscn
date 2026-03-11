@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://da3yh67g4dfp0"]
+
+[ext_resource type="Script" uid="uid://bltrg7m5xq2l0" path="res://Potato.cs" id="1_rx63k"]
+[ext_resource type="Texture2D" uid="uid://c8j8vmfant2qd" path="res://Assets/Objects/Potato Grow.png" id="2_ybd78"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vuwjt"]
+atlas = ExtResource("2_ybd78")
+region = Rect2(0, 0, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e31gr"]
+atlas = ExtResource("2_ybd78")
+region = Rect2(20, 0, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb5ut"]
+atlas = ExtResource("2_ybd78")
+region = Rect2(0, 22, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4idu5"]
+atlas = ExtResource("2_ybd78")
+region = Rect2(20, 22, 20, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63i0g"]
+atlas = ExtResource("2_ybd78")
+region = Rect2(0, 44, 20, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g6kkd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vuwjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e31gr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb5ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4idu5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63i0g")
+}],
+"loop": true,
+"name": &"grow",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2421v"]
+size = Vector2(2, 2)
+
+[node name="Potato" type="Area2D" unique_id=855477809]
+y_sort_enabled = true
+script = ExtResource("1_rx63k")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=494523393]
+y_sort_enabled = true
+sprite_frames = SubResource("SpriteFrames_g6kkd")
+animation = &"grow"
+autoplay = "grow"
+frame_progress = 0.6623085
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=378342222]
+y_sort_enabled = true
+position = Vector2(0, 3)
+shape = SubResource("RectangleShape2D_2421v")
