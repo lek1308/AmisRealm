@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://s2yy32gi8utq"]
+
+[ext_resource type="Texture2D" uid="uid://6xb4cf4a6i2c" path="res://Assets/Objects/Gemini_Generated_Image_vgmuvxvgmuvxvgmu-removebg-preview-1.png.png" id="1_vrf8f"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yy0l0"]
+radius = 8.0
+height = 16.0
+
+[node name="pink flower" type="StaticBody2D" unique_id=99452947]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2108287144]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, -10)
+texture = ExtResource("1_vrf8f")
+region_enabled = true
+region_rect = Rect2(128, 112, 32, 32)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=253856852]
+y_sort_enabled = true
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_yy0l0")

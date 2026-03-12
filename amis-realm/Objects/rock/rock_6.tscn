@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://t3djobt5ovna"]
+
+[ext_resource type="Texture2D" uid="uid://dxqba4ow3wiuq" path="res://Assets/Objects/unnamed (2)-Photoroom.png" id="1_ubtod"]
+
+[node name="rock 6" type="StaticBody2D" unique_id=1392704810]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2044318444]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0.80000305, -89)
+scale = Vector2(2, 2)
+texture = ExtResource("1_ubtod")
+region_enabled = true
+region_rect = Rect2(848, 112, 128, 128)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=2144077632]
+position = Vector2(-53.199997, -54)
+polygon = PackedVector2Array(-54, 32, -54, 54, -22, 73, 54, 55, 105, 75, 139, 69, 149, 55, 172, 51, 172, 32, 159, -37, -40, -33)

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://jr6nce64gtuc"]
+
+[ext_resource type="Texture2D" uid="uid://byl686aibujvy" path="res://Assets/Objects/Gemini_Generated_Image_t7fclzt7fclzt7fc-removebg-preview (1).png" id="1_djy03"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_omdcb"]
+radius = 96.0
+height = 224.0
+
+[node name="statue" type="StaticBody2D" unique_id=510832917]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2109953477]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(4.9999995, -244)
+scale = Vector2(5, 5)
+texture = ExtResource("1_djy03")
+region_enabled = true
+region_rect = Rect2(32, 32, 64, 104)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324035922]
+y_sort_enabled = true
+position = Vector2(2, -97)
+shape = SubResource("CapsuleShape2D_omdcb")

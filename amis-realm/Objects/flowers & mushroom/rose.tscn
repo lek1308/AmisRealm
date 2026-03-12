@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dpgtx0re04t8e"]
+
+[ext_resource type="Texture2D" uid="uid://dfbs6dm72j25b" path="res://Assets/Objects/pixel-art-flowers-charming-lavender-260nw-2690853587-removebg-preview.png" id="1_tbin4"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tbin4"]
+radius = 1.0
+height = 4.0
+
+[node name="rose" type="StaticBody2D" unique_id=570705143]
+y_sort_enabled = true
+scale = Vector2(2, 2)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1856870433]
+y_sort_enabled = true
+position = Vector2(0, -4.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_tbin4")
+region_enabled = true
+region_rect = Rect2(152, 8, 88, 112)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1176606141]
+position = Vector2(0, -2.5)
+shape = SubResource("CapsuleShape2D_tbin4")

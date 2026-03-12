@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cr2bxd0unb3ed"]
+
+[ext_resource type="Texture2D" uid="uid://dxhhxwclhw5do" path="res://Assets/Objects/unnamed (5)-Photoroom.png" id="1_1mq55"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ecqv7"]
+size = Vector2(543, 98)
+
+[node name="down wall" type="StaticBody2D" unique_id=1846222377]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1711041108]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, -48)
+texture = ExtResource("1_1mq55")
+region_enabled = true
+region_rect = Rect2(40, 568, 552, 120)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1677465017]
+position = Vector2(0.5, -49)
+shape = SubResource("RectangleShape2D_ecqv7")

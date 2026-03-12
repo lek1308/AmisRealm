@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://1hmf048qmd0o"]
+
+[ext_resource type="Script" uid="uid://8srq3c85us5n" path="res://Scripts/PortalToScene2.cs" id="1_d660x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dx558"]
+size = Vector2(1920, 4.0685425)
+
+[node name="Portal" type="Area2D" unique_id=868580961]
+scale = Vector2(2.2224083, 1.1679704)
+script = ExtResource("1_d660x")
+NextScenePath = "uid://3rchhtflq0ew"
+SpawnLocation = Vector2(850, -1005)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=688047423]
+position = Vector2(64, -0.53430176)
+scale = Vector2(1, 0.99999994)
+shape = SubResource("RectangleShape2D_dx558")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://fqwmcxnyi0cd"]
+
+[ext_resource type="Texture2D" uid="uid://dxqba4ow3wiuq" path="res://Assets/Objects/unnamed (2)-Photoroom.png" id="1_hkpci"]
+
+[node name="rock 4" type="StaticBody2D" unique_id=272034743]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=23544085]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, -92)
+scale = Vector2(2, 2)
+texture = ExtResource("1_hkpci")
+region_enabled = true
+region_rect = Rect2(40, 112, 120, 104)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=814722938]
+position = Vector2(0, -92)
+polygon = PackedVector2Array(-110, 18, -96, 64, -64.57984, 73.49151, 0, 93, 95, 64, 101, 46, 107, 3, 96, -28, -96, -30)

@@ -15,7 +15,6 @@ config/description="Đm thằng Khôi
 "
 run/main_scene="uid://yd1ucxp5gopv"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
-config/icon="uid://d257ffddlidy4"
 
 [display]
 

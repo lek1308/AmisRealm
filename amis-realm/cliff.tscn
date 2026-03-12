@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cxh6o8wj4dbct"]
+
+[ext_resource type="Texture2D" uid="uid://c1c8eq1o8t3bc" path="res://Assets/Objects/unnamed (1)-Photoroom.png" id="1_6ygku"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqg1l"]
+size = Vector2(375, 150)
+
+[node name="cliff" type="StaticBody2D" unique_id=174282093]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1234820147]
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(7, -74)
+texture = ExtResource("1_6ygku")
+region_enabled = true
+region_rect = Rect2(48, 112, 384, 168)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=898516325]
+position = Vector2(1.5, -81)
+shape = SubResource("RectangleShape2D_oqg1l")
